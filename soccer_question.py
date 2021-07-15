@@ -22,4 +22,3 @@ soccer = pd.read_csv(StringIO(text), skipfooter=1,
 soccer['diff'] = abs(np.array(soccer.F - soccer.A))
 soccer = soccer.sort_values('diff', ascending=True)
 print(soccer.Team.iloc[0], 'has the smallest difference')
-
